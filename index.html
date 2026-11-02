@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Whisk Bakery — Big flavor, baked by small hands</title>
+  <meta name="description" content="Fresh homemade cookies, fudgy brownies and dreamy tiramisu, baked in small batches by a 12-year-old baker with big dreams.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a href="#home" class="logo">
+        <span class="logo-mark" aria-hidden="true">🧁</span>
+        <span>Little <em>Whisk</em></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="btn btn-primary btn-sm">Order Now</a></li>
+      </ul>
+
+      <button type="button" class="cart-btn" aria-haspopup="dialog" aria-label="Open cart, 0 items, total $0.00">
+        <span class="cart-icon" aria-hidden="true">🛒</span>
+        <span class="cart-total" aria-hidden="true">$0.00</span>
+        <span class="cart-count" aria-hidden="true">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge">✨ Baked by a 12-year-old</span>
+          <h1>Big flavor, baked by <span class="highlight">small hands.</span></h1>
+          <p class="hero-sub">Chewy cookies, fudgy brownies and dreamy tiramisu, handmade in small batches with real butter, good chocolate and a whole lot of heart.</p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">Shop Now 🍪</a>
+            <a href="#about" class="btn btn-ghost">Our Story</a>
+          </div>
+          <ul class="hero-perks">
+            <li><span aria-hidden="true">🚲</span> Free delivery within 5 miles</li>
+            <li><span aria-hidden="true">💌</span> Handwritten thank-you note</li>
+          </ul>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="blob"></div>
+          <svg class="hero-cookie" viewBox="0 0 200 200">
+            <defs>
+              <mask id="bite">
+                <rect width="200" height="200" fill="#fff"/>
+                <circle cx="176" cy="40" r="22" fill="#000"/>
+                <circle cx="158" cy="22" r="16" fill="#000"/>
+                <circle cx="188" cy="64" r="14" fill="#000"/>
+              </mask>
+            </defs>
+            <g mask="url(#bite)">
+              <circle cx="100" cy="100" r="84" fill="#C98A44"/>
+              <circle cx="100" cy="100" r="76" fill="#E6A960"/>
+              <ellipse cx="70" cy="70" rx="11" ry="9" fill="#4A2C21"/>
+              <ellipse cx="118" cy="62" rx="9" ry="7" fill="#4A2C21"/>
+              <ellipse cx="135" cy="110" rx="12" ry="9" fill="#4A2C21"/>
+              <ellipse cx="90" cy="120" rx="10" ry="8" fill="#4A2C21"/>
+              <ellipse cx="60" cy="112" rx="8" ry="6" fill="#4A2C21"/>
+              <ellipse cx="110" cy="150" rx="9" ry="7" fill="#4A2C21"/>
+              <ellipse cx="150" cy="140" rx="7" ry="5" fill="#4A2C21"/>
+              <circle cx="88" cy="90" r="3" fill="#F3C98C"/>
+              <circle cx="125" cy="88" r="2.5" fill="#F3C98C"/>
+              <circle cx="72" cy="140" r="3" fill="#F3C98C"/>
+            </g>
+          </svg>
+          <span class="sprinkle s1"></span>
+          <span class="sprinkle s2"></span>
+          <span class="sprinkle s3"></span>
+          <span class="sprinkle s4"></span>
+          <span class="sprinkle s5"></span>
+          <span class="sprinkle s6"></span>
+          <span class="sticker sticker-1">🔥 Fresh daily</span>
+          <span class="sticker sticker-2">🧈 Real butter</span>
+        </div>
+      </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="background:var(--cream);color:var(--vanilla)">
+      <path d="M0,40 C240,90 480,-10 720,40 C960,90 1200,-10 1440,40 L1440,80 L0,80 Z" fill="currentColor"/>
+    </svg>
+
+    <!-- ===== About ===== -->
+    <section class="section section-vanilla" id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Our Story</span>
+          <h2>From one wobbly mixer to a real (small!) bakery</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="story-card">
+            <p class="lead">Little Whisk Bakery started on a rainy Saturday with a borrowed recipe card, a wobbly hand mixer and one very determined 12-year-old baker named Maya.</p>
+            <p>That first batch of chocolate chip cookies was a little flat and a little too brown at the edges, but the neighbors ate every crumb and asked for more. So Maya kept baking. Weekends became test-kitchen days. Notebooks filled up with recipe tweaks: more brown sugar here, a pinch of sea salt there, ten fewer seconds in the oven. Slowly the cookies got chewier, the brownies got fudgier, and a family-favorite tiramisu joined the menu.</p>
+            <p>Today Little Whisk is a real (small!) business run from a home kitchen, with a grown-up helping with the oven and deliveries. Every order is still made by hand in small batches with real butter, good chocolate and no shortcuts. Nothing sits on a shelf for days. It's baked fresh, boxed with care and finished with a handwritten thank-you note.</p>
+            <p>Little Whisk is about more than dessert. It's about learning to run a business, being proud of your work and sharing something sweet with your community. Every order helps a young baker save for culinary camp, and maybe one day a real bakery storefront.</p>
+            <p class="signoff">Thanks for supporting a small business, and a small baker with big dreams.</p>
+          </article>
+
+          <aside class="founder-card">
+            <div class="polaroid">
+              <svg viewBox="0 0 200 170" aria-hidden="true">
+                <rect width="200" height="170" fill="#FFE1EC"/>
+                <circle cx="40" cy="30" r="5" fill="#FFD37A"/>
+                <circle cx="165" cy="45" r="4" fill="#9FE2C8"/>
+                <circle cx="150" cy="20" r="3" fill="#C9B6F2"/>
+                <!-- chef hat -->
+                <ellipse cx="100" cy="52" rx="34" ry="22" fill="#fff"/>
+                <circle cx="76" cy="58" r="16" fill="#fff"/>
+                <circle cx="124" cy="58" r="16" fill="#fff"/>
+                <rect x="74" y="60" width="52" height="16" rx="4" fill="#fff"/>
+                <!-- face -->
+                <circle cx="100" cy="100" r="30" fill="#F7C9A8"/>
+                <path d="M70 92 Q72 66 100 70 Q128 66 130 92 Q120 78 100 80 Q80 78 70 92Z" fill="#6B3F2A"/>
+                <circle cx="89" cy="100" r="3.5" fill="#4A2C21"/>
+                <circle cx="111" cy="100" r="3.5" fill="#4A2C21"/>
+                <circle cx="82" cy="110" r="5" fill="#FF9BBE" opacity=".7"/>
+                <circle cx="118" cy="110" r="5" fill="#FF9BBE" opacity=".7"/>
+                <path d="M91 112 Q100 121 109 112" stroke="#4A2C21" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <!-- apron -->
+                <path d="M62 170 Q64 132 100 130 Q136 132 138 170Z" fill="#FF7BA9"/>
+                <rect x="86" y="142" width="28" height="18" rx="5" fill="#fff" opacity=".85"/>
+              </svg>
+              <span class="polaroid-caption">Head baker, age 12</span>
+            </div>
+            <h3>Meet Maya</h3>
+            <p class="handwritten">"Every box gets a thank-you note from me! ♡"</p>
+            <ul class="stats">
+              <li><strong>100%</strong><span>Handmade</span></li>
+              <li><strong>Small</strong><span>Batches</span></li>
+              <li><strong>Big</strong><span>Dreams</span></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="background:var(--vanilla);color:var(--cream)">
+      <path d="M0,40 C240,90 480,-10 720,40 C960,90 1200,-10 1440,40 L1440,80 L0,80 Z" fill="currentColor"/>
+    </svg>
+
+    <!-- ===== Menu ===== -->
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">The Menu</span>
+          <h2>Treats worth the wait</h2>
+          <p>Baked fresh to order. Order Mon–Thu, then pick up or get it delivered Fri–Sun.</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter menu" hidden>
+          <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true"><span aria-hidden="true">🍽️</span> All <span class="count"></span></button>
+          <button type="button" class="filter-btn" data-filter="cookie" aria-pressed="false"><span aria-hidden="true">🍪</span> Cookies <span class="count"></span></button>
+          <button type="button" class="filter-btn" data-filter="brownie" aria-pressed="false"><span aria-hidden="true">🟫</span> Brownies <span class="count"></span></button>
+          <button type="button" class="filter-btn" data-filter="tiramisu" aria-pressed="false"><span aria-hidden="true">🍰</span> Tiramisu <span class="count"></span></button>
+          <button type="button" class="filter-btn" data-filter="gift" aria-pressed="false"><span aria-hidden="true">🎁</span> Gift Boxes <span class="count"></span></button>
+        </div>
+        <p class="filter-status" aria-live="polite"></p>
+
+        <div class="menu-grid">
+
+          <article class="product-card" data-price="200" data-category="cookie" style="--tint:var(--butter-soft)">
+            <div class="product-art">
+              <svg viewBox="0 0 120 120" aria-hidden="true">
+                <circle cx="60" cy="60" r="44" fill="#C98A44"/>
+                <circle cx="60" cy="60" r="40" fill="#E6A960"/>
+                <ellipse cx="45" cy="45" rx="7" ry="5.5" fill="#4A2C21"/>
+                <ellipse cx="72" cy="40" rx="6" ry="4.5" fill="#4A2C21"/>
+                <ellipse cx="80" cy="66" rx="7" ry="5.5" fill="#4A2C21"/>
+                <ellipse cx="55" cy="72" rx="6.5" ry="5" fill="#4A2C21"/>
+                <ellipse cx="38" cy="66" rx="5" ry="4" fill="#4A2C21"/>
+                <ellipse cx="66" cy="88" rx="5.5" ry="4.5" fill="#4A2C21"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="tag">Cookie</span>
+              <h3>Classic Chocolate Chip Cookie</h3>
+              <p>Chewy center, crispy edges, loaded with chocolate chunks.</p>
+              <div class="price-row">
+                <span class="price">$2.00</span>
+                <span class="price-note">or $20 / dozen</span>
+                <button type="button" class="add-btn" aria-label="Add Classic Chocolate Chip Cookie to cart">Add <span aria-hidden="true">+</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-price="200" data-category="cookie" style="--tint:var(--blush)">
+            <div class="product-art">
+              <svg viewBox="0 0 120 120" aria-hidden="true">
+                <circle cx="60" cy="60" r="44" fill="#E2B074"/>
+                <circle cx="60" cy="60" r="40" fill="#F4CF92"/>
+                <path d="M60 60 m-4 0 a4 4 0 1 1 8 0 a10 10 0 1 1 -18 0 a16 16 0 1 1 30 0 a22 22 0 1 1 -42 0" fill="none" stroke="#C47D3E" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+                <circle cx="40" cy="40" r="2" fill="#A8622D"/>
+                <circle cx="82" cy="44" r="2" fill="#A8622D"/>
+                <circle cx="84" cy="80" r="2" fill="#A8622D"/>
+                <circle cx="38" cy="82" r="2" fill="#A8622D"/>
+                <circle cx="60" cy="92" r="1.8" fill="#A8622D"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="tag">Cookie</span>
+              <h3>Cinnamon Snickerdoodle</h3>
+              <p>Soft cookie rolled in cinnamon sugar.</p>
+              <div class="price-row">
+                <span class="price">$2.00</span>
+                <span class="price-note">or $20 / dozen</span>
+                <button type="button" class="add-btn" aria-label="Add Cinnamon Snickerdoodle to cart">Add <span aria-hidden="true">+</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-price="300" data-category="brownie" style="--tint:var(--mint-soft)">
+            <div class="product-art">
+              <svg viewBox="0 0 120 120" aria-hidden="true">
+                <rect x="20" y="50" width="80" height="40" rx="8" fill="#4E2B1C"/>
+                <rect x="20" y="34" width="80" height="34" rx="8" fill="#6B3F2A"/>
+                <path d="M32 46 l12 6 l10 -5 M64 44 l10 8 l14 -4 M40 60 l14 -3" stroke="#8A5A40" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="tag tag-brownie">Brownie</span>
+              <h3>Double Fudge Brownie</h3>
+              <p>Rich, gooey, with a crackly top.</p>
+              <div class="price-row">
+                <span class="price">$3.00</span>
+                <span class="price-note">each</span>
+                <button type="button" class="add-btn" aria-label="Add Double Fudge Brownie to cart">Add <span aria-hidden="true">+</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-price="350" data-category="brownie" style="--tint:var(--lilac-soft)">
+            <div class="product-art">
+              <svg viewBox="0 0 120 120" aria-hidden="true">
+                <rect x="20" y="50" width="80" height="40" rx="8" fill="#4E2B1C"/>
+                <rect x="20" y="34" width="80" height="34" rx="8" fill="#6B3F2A"/>
+                <path d="M24 44 C34 34 40 58 52 46 S70 36 78 50 S94 40 98 46" stroke="#F2B04A" stroke-width="5" fill="none" stroke-linecap="round"/>
+                <rect x="38" y="56" width="4" height="4" rx="1" fill="#fff" transform="rotate(20 40 58)"/>
+                <rect x="62" y="58" width="4" height="4" rx="1" fill="#fff" transform="rotate(-15 64 60)"/>
+                <rect x="84" y="56" width="3.5" height="3.5" rx="1" fill="#fff"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="tag tag-brownie">Brownie</span>
+              <h3>Salted Caramel Brownie</h3>
+              <p>Fudge brownie swirled with caramel and a sprinkle of sea salt.</p>
+              <div class="price-row">
+                <span class="price">$3.50</span>
+                <span class="price-note">each</span>
+                <button type="button" class="add-btn" aria-label="Add Salted Caramel Brownie to cart">Add <span aria-hidden="true">+</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-price="600" data-category="tiramisu" style="--tint:var(--butter-soft)">
+            <div class="product-art">
+              <svg viewBox="0 0 120 120" aria-hidden="true">
+                <path d="M32 26 h56 l-6 74 a8 8 0 0 1 -8 7 h-28 a8 8 0 0 1 -8 -7z" fill="#fff" stroke="#F3D3DF" stroke-width="3"/>
+                <clipPath id="cup"><path d="M35 30 h50 l-5.6 69 a6 6 0 0 1 -6 5 h-26.8 a6 6 0 0 1 -6 -5z"/></clipPath>
+                <g clip-path="url(#cup)">
+                  <rect x="30" y="30" width="60" height="10" fill="#7A4A33"/>
+                  <rect x="30" y="40" width="60" height="16" fill="#FFF1D9"/>
+                  <rect x="30" y="56" width="60" height="12" fill="#9C6644"/>
+                  <rect x="30" y="68" width="60" height="16" fill="#FFF1D9"/>
+                  <rect x="30" y="84" width="60" height="24" fill="#9C6644"/>
+                </g>
+                <circle cx="54" cy="20" r="7" fill="#E5487F"/>
+                <path d="M54 13 q3 -6 8 -6" stroke="#5DBB8F" stroke-width="3" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="tag tag-tiramisu">Tiramisu</span>
+              <h3>Tiramisu Cup</h3>
+              <p>Single-serve layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+              <div class="price-row">
+                <span class="price">$6.00</span>
+                <span class="price-note">per cup</span>
+                <button type="button" class="add-btn" aria-label="Add Tiramisu Cup to cart">Add <span aria-hidden="true">+</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-price="3600" data-category="tiramisu" style="--tint:var(--blush)">
+            <div class="product-art">
+              <svg viewBox="0 0 120 120" aria-hidden="true">
+                <rect x="10" y="40" width="100" height="52" rx="12" fill="#FF9BBE"/>
+                <rect x="16" y="36" width="88" height="46" rx="8" fill="#FFF1D9"/>
+                <rect x="16" y="36" width="88" height="22" rx="8" fill="#8A5636"/>
+                <path d="M45 36 v46 M75 36 v46 M16 58 h88" stroke="#6B3F2A" stroke-width="2" opacity=".5"/>
+                <circle cx="30" cy="46" r="1.6" fill="#4A2C21"/>
+                <circle cx="58" cy="44" r="1.6" fill="#4A2C21"/>
+                <circle cx="90" cy="48" r="1.6" fill="#4A2C21"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="tag tag-tiramisu">Tiramisu</span>
+              <h3>Family Tiramisu Tray</h3>
+              <p>Serves 8. Perfect for parties and dinners (48-hour notice).</p>
+              <div class="price-row">
+                <span class="price">$36.00</span>
+                <span class="price-note">serves 8</span>
+                <button type="button" class="add-btn" aria-label="Add Family Tiramisu Tray to cart">Add <span aria-hidden="true">+</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card product-card--feature" data-price="1500" data-category="gift" style="--tint:var(--mint-soft)">
+            <span class="ribbon">Best gift</span>
+            <div class="product-art">
+              <svg viewBox="0 0 120 120" aria-hidden="true">
+                <rect x="22" y="52" width="76" height="50" rx="6" fill="#FF7BA9"/>
+                <rect x="16" y="40" width="88" height="18" rx="5" fill="#E5487F"/>
+                <rect x="54" y="40" width="12" height="62" fill="#FFD37A"/>
+                <ellipse cx="48" cy="34" rx="13" ry="8" fill="#FFD37A" transform="rotate(-20 48 34)"/>
+                <ellipse cx="72" cy="34" rx="13" ry="8" fill="#FFD37A" transform="rotate(20 72 34)"/>
+                <circle cx="60" cy="38" r="6" fill="#F2B04A"/>
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="tag tag-gift">Gift</span>
+              <h3>Sweet Sampler Box</h3>
+              <p>4 cookies + 2 brownies, gift-wrapped and ready to give.</p>
+              <div class="price-row">
+                <span class="price">$15.00</span>
+                <span class="price-note">per box</span>
+                <button type="button" class="add-btn" aria-label="Add Sweet Sampler Box to cart">Add <span aria-hidden="true">+</span></button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="callout" data-category="tiramisu">
+          <span class="callout-icon" aria-hidden="true">🧒</span>
+          <p><strong>Kids' Tiramisu, coffee-free!</strong> Made with cocoa milk instead of espresso. Available on request at the same price.</p>
+        </div>
+      </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="background:var(--cream);color:var(--blush)">
+      <path d="M0,40 C240,90 480,-10 720,40 C960,90 1200,-10 1440,40 L1440,80 L0,80 Z" fill="currentColor"/>
+    </svg>
+
+    <!-- ===== Why Choose Us ===== -->
+    <section class="section section-blush" id="why">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why Little Whisk?</span>
+          <h2>Five sweet reasons to order</h2>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <span class="why-icon" style="--tint:var(--butter)" aria-hidden="true">🍪</span>
+            <h3>Baked fresh to order</h3>
+            <p>Small batches, made the day before pickup or delivery.</p>
+          </div>
+          <div class="why-card">
+            <span class="why-icon" style="--tint:var(--mint)" aria-hidden="true">🧈</span>
+            <h3>Real ingredients</h3>
+            <p>Real butter, real chocolate and real mascarpone, with no preservatives.</p>
+          </div>
+          <div class="why-card">
+            <span class="why-icon" style="--tint:var(--lilac)" aria-hidden="true">🌟</span>
+            <h3>Support a young entrepreneur</h3>
+            <p>Every purchase helps a 12-year-old learn real business skills and save for culinary camp.</p>
+          </div>
+          <div class="why-card">
+            <span class="why-icon" style="--tint:var(--strawberry-soft)" aria-hidden="true">💌</span>
+            <h3>Personal touches</h3>
+            <p>A handwritten thank-you note in every box, and custom orders for birthdays and parties.</p>
+          </div>
+          <div class="why-card">
+            <span class="why-icon" style="--tint:var(--butter)" aria-hidden="true">🚲</span>
+            <h3>Local &amp; friendly</h3>
+            <p>Free delivery within 5 miles, or pick up from our porch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="background:var(--blush);color:var(--vanilla)">
+      <path d="M0,40 C240,90 480,-10 720,40 C960,90 1200,-10 1440,40 L1440,80 L0,80 Z" fill="currentColor"/>
+    </svg>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section section-vanilla" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Got questions?</span>
+          <h2>
+            <button type="button" class="faq-toggle" aria-expanded="true" aria-controls="faq-panel">
+              Frequently asked questions
+              <span class="faq-toggle-label"><span class="faq-toggle-text">Hide questions</span> <span class="faq-chevron" aria-hidden="true"></span></span>
+            </button>
+          </h2>
+        </div>
+
+        <div class="faq-panel" id="faq-panel">
+        <div class="faq-panel-inner">
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3><button type="button" class="faq-question" aria-expanded="true" aria-controls="faq-1" id="faq-q1">How do I place an order? <span class="faq-icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-answer" id="faq-1" role="region" aria-labelledby="faq-q1"><div>
+              <p>Tap <strong>"Add"</strong> on anything in the <a href="#menu">menu</a>, open the 🛒 cart and press <strong>Checkout</strong>. Your order is copied into the <a href="#contact">contact form</a>, so you just add your name and email and send it. You can also email or call us directly.</p>
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <h3><button type="button" class="faq-question" aria-expanded="true" aria-controls="faq-2" id="faq-q2">How far ahead should I order? <span class="faq-icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-answer" id="faq-2" role="region" aria-labelledby="faq-q2"><div>
+              <p>Orders open <strong>Monday to Thursday</strong> for pickup or delivery <strong>Friday to Sunday</strong>, 10am–5pm. The Family Tiramisu Tray needs <strong>48 hours' notice</strong>, because it has to set in the fridge.</p>
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <h3><button type="button" class="faq-question" aria-expanded="true" aria-controls="faq-3" id="faq-q3">Do you deliver? <span class="faq-icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-answer" id="faq-3" role="region" aria-labelledby="faq-q3"><div>
+              <p>Yes! Delivery is <strong>free within 5 miles</strong> of Willow Creek. If you're further away, you're welcome to pick up from our porch at 42 Maple Leaf Lane by appointment.</p>
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <h3><button type="button" class="faq-question" aria-expanded="true" aria-controls="faq-4" id="faq-q4">How do I pay? <span class="faq-icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-answer" id="faq-4" role="region" aria-labelledby="faq-q4"><div>
+              <p>You pay when you pick up or receive your order. A parent confirms your total when we reply to your order, so there are no surprises.</p>
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <h3><button type="button" class="faq-question" aria-expanded="true" aria-controls="faq-5" id="faq-q5">What about allergies? <span class="faq-icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-answer" id="faq-5" role="region" aria-labelledby="faq-q5"><div>
+              <p>All our treats contain <strong>wheat, eggs and dairy</strong>. Everything is made in a home kitchen, so we can't promise anything is free from nuts or other allergens. If you have an allergy, please <a href="#contact">ask us</a> before ordering.</p>
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <h3><button type="button" class="faq-question" aria-expanded="true" aria-controls="faq-6" id="faq-q6">Does the tiramisu have coffee or alcohol? <span class="faq-icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-answer" id="faq-6" role="region" aria-labelledby="faq-q6"><div>
+              <p>Our tiramisu has coffee but <strong>no alcohol</strong>. For kids or anyone avoiding caffeine, ask for the <strong>coffee-free Kids' Tiramisu</strong>, made with cocoa milk, at the same price.</p>
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <h3><button type="button" class="faq-question" aria-expanded="true" aria-controls="faq-7" id="faq-q7">How long do the treats stay fresh? <span class="faq-icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-answer" id="faq-7" role="region" aria-labelledby="faq-q7"><div>
+              <p>Cookies and brownies stay fresh for about <strong>3 days</strong> in an airtight box. Keep tiramisu <strong>in the fridge</strong> and enjoy it within 2 days. (Most of our customers say it doesn't last that long!)</p>
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <h3><button type="button" class="faq-question" aria-expanded="true" aria-controls="faq-8" id="faq-q8">Can I order for a birthday or party? <span class="faq-icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-answer" id="faq-8" role="region" aria-labelledby="faq-q8"><div>
+              <p>Absolutely, we love party orders! Custom boxes, bigger batches and Family Tiramisu Trays are all possible. Please <a href="#contact">get in touch</a> about a week ahead so there's time to plan.</p>
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <h3><button type="button" class="faq-question" aria-expanded="true" aria-controls="faq-9" id="faq-q9">Is it really run by a 12-year-old? <span class="faq-icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-answer" id="faq-9" role="region" aria-labelledby="faq-q9"><div>
+              <p>Yes! Maya does the baking, recipe testing and thank-you notes. A parent helps with the oven, deliveries and answering the phone.</p>
+            </div></div>
+          </div>
+        </div>
+
+        <p class="faq-more">Still have a question? <a href="#contact">Send us a message →</a></p>
+        <div class="faq-close-wrap">
+          <button type="button" class="btn btn-ghost faq-close">Close FAQ <span aria-hidden="true">✕</span></button>
+        </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="background:var(--vanilla);color:var(--cream)">
+      <path d="M0,40 C240,90 480,-10 720,40 C960,90 1200,-10 1440,40 L1440,80 L0,80 Z" fill="currentColor"/>
+    </svg>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Say Hello</span>
+          <h2>Place an order or ask a question</h2>
+          <p>Tell us what you'd like and when, and we'll confirm within a day.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="form-wrap">
+            <form class="contact-form" action="mailto:hello@littlewhiskbakery.com" method="post" enctype="text/plain" novalidate>
+              <div class="field">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Priya Sharma" autocomplete="name" required aria-describedby="name-error">
+                <p class="field-error" id="name-error"></p>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required aria-describedby="email-error">
+                <p class="field-error" id="email-error"></p>
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="I'd love a dozen chocolate chip cookies for Saturday..." required aria-describedby="message-error"></textarea>
+                <p class="field-error" id="message-error"></p>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Send Message 💌</button>
+            </form>
+
+            <div class="form-success" tabindex="-1" hidden>
+              <span class="form-success-icon" aria-hidden="true">🎉</span>
+              <h3>Thank you<span class="form-success-name"></span>!</h3>
+              <p>Your message is ready. Just press send in your email app, and Maya will get back to you within a day.</p>
+              <p class="handwritten">Sweet things are coming your way ♡</p>
+              <button type="button" class="btn btn-ghost form-reset">Send another message</button>
+            </div>
+          </div>
+
+          <div class="contact-details">
+            <ul>
+              <li>
+                <span class="contact-icon" style="--tint:var(--butter)" aria-hidden="true">📍</span>
+                <div>
+                  <h3>Address</h3>
+                  <p>42 Maple Leaf Lane<br>Willow Creek, CA 95123</p>
+                  <small>Home kitchen, pickup by appointment</small>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" style="--tint:var(--mint)" aria-hidden="true">✉️</span>
+                <div>
+                  <h3>Email</h3>
+                  <p><a href="mailto:hello@littlewhiskbakery.com">hello@littlewhiskbakery.com</a></p>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" style="--tint:var(--lilac)" aria-hidden="true">📞</span>
+                <div>
+                  <h3>Phone</h3>
+                  <p><a href="tel:+15554829937">(555) 482-9937</a></p>
+                  <small>Managed by a parent</small>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" style="--tint:var(--strawberry-soft)" aria-hidden="true">🕒</span>
+                <div>
+                  <h3>Hours</h3>
+                  <p>Orders: Mon–Thu<br>Pickup &amp; delivery: Fri–Sun, 10am–5pm</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="background:var(--cream);color:var(--lilac-soft)">
+      <path d="M0,40 C240,90 480,-10 720,40 C960,90 1200,-10 1440,40 L1440,80 L0,80 Z" fill="currentColor"/>
+    </svg>
+
+    <!-- ===== Game ===== -->
+    <section class="section section-lilac" id="game">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Take a sweet break</span>
+          <h2>Treat Catch 🧁</h2>
+          <p>Help Maya catch the falling treats in her mixing bowl, but watch out for burnt cookies!</p>
+        </div>
+
+        <div class="game">
+          <div class="game-hud">
+            <span class="game-chip">Score <strong class="game-score">0</strong></span>
+            <span class="game-chip game-lives" role="img" aria-label="3 hearts left">❤️❤️❤️</span>
+            <span class="game-chip">Best <strong class="game-best">0</strong></span>
+            <button type="button" class="btn btn-ghost btn-sm game-restart" hidden>↻ Restart</button>
+          </div>
+
+          <div class="game-stage">
+            <canvas class="game-canvas" tabindex="0" aria-label="Treat Catch play area. Use the left and right arrow keys, the mouse, or drag to move the bowl."></canvas>
+
+            <div class="game-overlay" aria-live="polite">
+              <div class="game-card" data-screen="start">
+                <h3>Ready to bake? 👩‍🍳</h3>
+                <p>Move the bowl with <kbd>←</kbd> <kbd>→</kbd>, the mouse, or by dragging your finger.</p>
+                <ul class="game-points">
+                  <li><span aria-hidden="true">🍪</span> +1</li>
+                  <li><span aria-hidden="true">🟫</span> +2</li>
+                  <li><span aria-hidden="true">🍰</span> +3</li>
+                  <li><span aria-hidden="true">⭐</span> +5</li>
+                  <li class="bad"><span aria-hidden="true">🔥</span> ✕ Avoid!</li>
+                </ul>
+                <p class="game-small"><strong>❤️❤️❤️ = your 3 lives.</strong> You lose one if you drop a treat or catch a burnt cookie. Lose all 3 and it's game over!</p>
+                <button type="button" class="btn btn-primary game-start">▶ Start</button>
+              </div>
+
+              <div class="game-card" data-screen="paused" hidden>
+                <h3>Paused ⏸️</h3>
+                <p>Take a breather. Your treats will wait.</p>
+                <button type="button" class="btn btn-primary game-resume">▶ Resume</button>
+              </div>
+
+              <div class="game-card" data-screen="over" hidden>
+                <h3>Game Over!</h3>
+                <p class="game-final-line">You scored <strong class="game-final">0</strong> <span class="game-final-unit">points</span></p>
+                <p class="game-reason game-small"></p>
+                <p class="game-newbest" hidden>🎉 New best score!</p>
+                <p class="game-small">Best: <span class="game-best-over">0</span></p>
+                <button type="button" class="btn btn-primary game-restart">↻ Restart</button>
+              </div>
+            </div>
+          </div>
+
+          <p class="game-help"><kbd>←</kbd> <kbd>→</kbd> or <kbd>A</kbd> <kbd>D</kbd> to move · mouse or drag · <kbd>P</kbd> to pause · <kbd>Space</kbd> to start</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="background:var(--lilac-soft);color:var(--cocoa)">
+    <path d="M0,40 C240,90 480,-10 720,40 C960,90 1200,-10 1440,40 L1440,80 L0,80 Z" fill="currentColor"/>
+  </svg>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-light">
+          <span class="logo-mark" aria-hidden="true">🧁</span>
+          <span>Little <em>Whisk</em></span>
+        </a>
+        <p class="handwritten">Big flavor, baked by small hands.</p>
+      </div>
+
+      <ul class="socials">
+        <li>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H7v3.5h2V21h3.5v-8.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 3h3.2a4 4 0 0 0 3.8 3.6v3.3a7.4 7.4 0 0 1-3.8-1.1V15a6 6 0 1 1-6-6v3.4a2.6 2.6 0 1 0 2.8 2.6z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10.5 21l2-8.5"/><path d="M8.2 13.6A5 5 0 0 1 7 10.2a5 5 0 0 1 10 0c0 3-1.6 5-3.6 5-1.3 0-2-.9-1.7-2.2l.8-3"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Little Whisk Bakery. Made with love (and lots of sprinkles).</p>
+      <p><a href="#game">🎮 Play Treat Catch</a> · <a href="#home">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <!-- ===== Cart drawer ===== -->
+  <dialog class="cart-drawer" aria-labelledby="cart-title">
+    <div class="cart-head">
+      <h2 id="cart-title">Your Cart <span aria-hidden="true">🧺</span></h2>
+      <button type="button" class="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+
+    <ul class="cart-items"></ul>
+    <div class="cart-empty">
+      <span aria-hidden="true">🍪</span>
+      <p>Your cart is empty.<br>Go pick a treat!</p>
+    </div>
+
+    <div class="cart-foot">
+      <div class="cart-sum">
+        <span>Total</span>
+        <strong class="cart-sum-total">$0.00</strong>
+      </div>
+      <button type="button" class="btn btn-primary btn-block cart-checkout">Checkout 💌</button>
+      <button type="button" class="cart-clear">Clear cart</button>
+    </div>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <button type="button" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js" defer></script>
+  <script src="cart.js" defer></script>
+  <script src="form.js" defer></script>
+  <script src="faq.js" defer></script>
+  <script src="nav.js" defer></script>
+  <script src="game.js" defer></script>
+</body>
+</html>
