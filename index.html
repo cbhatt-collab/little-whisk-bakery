@@ -34,6 +34,11 @@
         <li><a href="#contact" class="btn btn-primary btn-sm">Order Now</a></li>
       </ul>
 
+      <button type="button" class="ai-btn" aria-haspopup="dialog" aria-label="Enable AI features">
+        <span class="ai-icon" aria-hidden="true">✨</span>
+        <span class="ai-btn-text" aria-hidden="true">Enable AI</span>
+      </button>
+
       <button type="button" class="cart-btn" aria-haspopup="dialog" aria-label="Open cart, 0 items, total $0.00">
         <span class="cart-icon" aria-hidden="true">🛒</span>
         <span class="cart-total" aria-hidden="true">$0.00</span>
@@ -705,6 +710,38 @@
     </div>
   </dialog>
 
+  <!-- ===== Enable AI (Gemini API key) ===== -->
+  <dialog class="ai-dialog" aria-labelledby="ai-title">
+    <form class="ai-form" novalidate>
+      <div class="ai-head">
+        <h2 id="ai-title">Enable AI <span aria-hidden="true">✨</span></h2>
+        <button type="button" class="ai-close" aria-label="Close">&times;</button>
+      </div>
+
+      <p class="ai-intro">Paste your Gemini API key to turn on AI features. You can get a free key from <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">Google AI Studio</a>.</p>
+
+      <div class="field">
+        <label for="ai-key">Gemini API key</label>
+        <div class="ai-key-row">
+          <input type="password" id="ai-key" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Paste your key here" aria-describedby="ai-key-error ai-note">
+          <button type="button" class="ai-show" aria-pressed="false">Show</button>
+        </div>
+        <p class="field-error" id="ai-key-error"></p>
+      </div>
+
+      <label class="ai-remember">
+        <input type="checkbox" id="ai-remember">
+        Remember on this device
+      </label>
+      <p class="ai-note" id="ai-note">🔒 Your key stays in this browser and is only sent to Google. Unless you tick "Remember", it's forgotten when you close the tab.</p>
+
+      <p class="ai-status" role="status"></p>
+
+      <button type="submit" class="btn btn-primary btn-block ai-connect">Connect</button>
+      <button type="button" class="ai-disable" hidden>Turn off AI and forget my key</button>
+    </form>
+  </dialog>
+
   <div class="toast" role="status" aria-live="polite"></div>
 
   <button type="button" class="back-to-top" aria-label="Back to top">
@@ -717,5 +754,6 @@
   <script src="faq.js" defer></script>
   <script src="nav.js" defer></script>
   <script src="game.js" defer></script>
+  <script src="ai.js" defer></script>
 </body>
 </html>

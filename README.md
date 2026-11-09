@@ -16,6 +16,7 @@ A website for a home bakery run by a 12-year-old baker who sells cookies, browni
 | ❓ **FAQ accordion** | Open the whole list from its heading, then expand each question on its own | `faq.js` |
 | 🧭 **Smooth navigation** | Smooth scrolling between sections, a mobile menu and a back-to-top button | `nav.js` |
 | 🎮 **Treat Catch game** | A mini-game where you catch falling treats in a mixing bowl | `game.js` |
+| ✨ **Enable AI** | Paste your own Gemini API key to turn on AI features (Gemini 3.5 Flash-Lite) | `ai.js` |
 
 The page also works on phones and stays usable without JavaScript. For example, every FAQ answer stays visible if scripts are turned off.
 
@@ -58,6 +59,14 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
+### ✨ Turning on AI
+
+1. Get a free API key from [Google AI Studio](https://aistudio.google.com/apikey).
+2. Click **✨ Enable AI** in the navbar and paste your key.
+3. The site checks the key with Google before turning AI on.
+
+Your key is **never stored in the code or in this repository**. It stays in your browser: it's forgotten when you close the tab, unless you tick "Remember on this device." Click the ✨ button again at any time to turn AI off and remove the key.
+
 ---
 
 ## 📁 Project structure
@@ -72,6 +81,7 @@ little-whisk-bakery/
 ├── faq.js           # FAQ accordion
 ├── nav.js           # Smooth scrolling, mobile menu, back-to-top
 ├── game.js          # Treat Catch mini-game
+├── ai.js            # "Enable AI" button and Gemini API key box
 ├── brand-story.md   # Brand name, story, menu and contact details
 └── prompts.md       # Every AI prompt used to build the site
 ```
